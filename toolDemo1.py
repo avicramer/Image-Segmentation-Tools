@@ -7,6 +7,7 @@ Created on Tue Dec 09 23:03:46 2014
 
 from Tkinter import *  #Tkinter = python GUI package
 from PIL import *  #Pillow = python image processing library
+from PIL import Image
 import ImageTk
 import sys
 import retSeg2 as rS
@@ -168,7 +169,7 @@ master.title( "Click region boundaries")  #Text that appears in window heading
 
 canvas = Canvas(master, width=canvas_width, height=canvas_height)
 
-im1 = ('int1.tif')
+im1 = ('testfiles/int1.tif')
 #photoim = ImageTk.PhotoImage(im1)  #I don't think it is possible to directly
 #display a .tif on the Tkinter canvas
 
